@@ -1,0 +1,27 @@
+RUMBO 360 — V2.4
+Motor de oferta educativa multiinstitucional
+
+Base: V2.3 RIASEC VISIBLE.
+
+Cambios principales:
+- Se conserva P1-P9 y el cálculo RIASEC.
+- P10 conserva su independencia del diagnóstico RIASEC y se corrige para guardar los valores internos desplazamiento/economico/laboral/ninguno.
+- Se amplía ITM con las ofertas verificadas: Tecnología en Análisis de Costos y Presupuestos presencial, Tecnología en Gestión Administrativa presencial, Tecnología en Control de Calidad e Ingeniería Electromecánica.
+- Se incorporan campus/sedes y oferta territorial conocida de ITM en mi Barrio.
+- Se incorpora el catálogo de pregrado 2027-1 del Colegio Mayor de Antioquia, incluyendo modalidades y sedes publicadas.
+- El motor deja de estar amarrado a ITM y trabaja sobre catalogoProgramas.
+- Las matrices RIASEC de los programas son propias de RUMBO 360 y deben continuar calibrándose mediante pruebas externas.
+- La recomendación evita duplicar el mismo programa base por institución cuando existen modalidades múltiples.
+- Para desplazamiento se priorizan modalidades virtuales y ofertas con Comuna 1 cuando existen.
+- Para condición laboral se priorizan modalidades virtuales.
+- Para condición económica se mantiene la capa separada de apoyos y fuentes oficiales.
+
+Fuentes oficiales consultadas:
+ITM: https://www.itm.edu.co/admisiones/nuevo-pregrado/
+ITM programas por campus: https://www.itm.edu.co/aspirante-pregrado/programas-por-campus/
+ITM oferta tecnológica: https://www.itm.edu.co/aspirante-pregrado/tecnologias/
+ITM oferta profesional: https://www.itm.edu.co/aspirante-pregrado/programas-profesionales/
+ITM en mi Barrio: https://www.itm.edu.co/en-mi-barrio/programas-ofertados/
+Colegio Mayor admisiones 2027-1: https://www.colmayor.edu.co/admisiones/inscripciones-2027-1/
+
+Nota: esta versión no incorpora Pascual Bravo todavía.

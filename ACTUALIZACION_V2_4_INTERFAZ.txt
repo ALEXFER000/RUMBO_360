@@ -1,0 +1,22 @@
+RUMBO 360 — V2.4
+INTERFAZ DE DEMOSTRACIÓN
+
+Base: V2.4 Motor de oferta educativa multiinstitucional.
+
+Esta actualización modifica únicamente la capa visual:
+- Nueva interfaz de inicio y navegación.
+- Presentación responsive para computador y celular.
+- Mantiene los identificadores HTML requeridos por selection.js.
+- No modifica el cálculo RIASEC.
+- No modifica P1-P10.
+- No modifica P10 ni sus valores internos.
+- No modifica el catálogo multiinstitucional.
+- No modifica main.py ni selection.js.
+- Mantiene ITM y Colegio Mayor de Antioquia como instituciones activas.
+- Pascual Bravo continúa reservado para una futura ampliación.
+
+Propósito:
+Dejar V2.4 preparada para una demostración académica y concentrar el trabajo
+posterior en la sustentación teórica del proyecto.
+
+Fecha: 26 de septiembre de 2026.

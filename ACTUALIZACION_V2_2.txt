@@ -1,0 +1,27 @@
+RUMBO 360 V2.2 – Actualización catálogo ITM
+
+CAMBIO PRINCIPAL
+Se amplió el catálogo del prototipo para trabajar exclusivamente con la oferta académica del ITM, incorporando programas tecnológicos y profesionales de diferentes áreas.
+
+ARQUITECTURA
+P1-P9 -> Perfil RIASEC -> Programas compatibles del ITM -> P10 -> condiciones de acceso -> enlaces oficiales ITM.
+
+IMPORTANTE
+- P1 y P10 no puntúan RIASEC.
+- P2-P9 construyen el perfil RIASEC.
+- Las afinidades RIASEC de los programas son reglas internas de orientación de RUMBO 360, no una clasificación oficial del ITM.
+- Los programas que no tienen página específica verificada en esta versión enlazan la oferta oficial correspondiente del ITM.
+- P10 continúa funcionando como filtro de acceso: desplazamiento y trabajo priorizan modalidades virtuales/virtuales duales; económico muestra apoyos institucionales.
+
+FUENTE OFICIAL CONSULTADA
+https://www.itm.edu.co/aspirante-pregrado/
+https://www.itm.edu.co/aspirante-pregrado/programas-profesionales/
+https://www.itm.edu.co/aspirante-pregrado/tecnologias/
+
+INSTALACIÓN
+1. Reemplazar la carpeta app del proyecto local por la carpeta app incluida en este paquete.
+2. Abrir PowerShell en la carpeta raíz del proyecto.
+3. Activar el entorno virtual si corresponde.
+4. Ejecutar: uvicorn app.main:app --reload
+5. Abrir: http://127.0.0.1:8000
+6. Probar perfiles con resultados artísticos, científicos, sociales, administrativos y tecnológicos.

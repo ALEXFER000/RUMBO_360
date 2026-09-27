@@ -1,0 +1,21 @@
+RUMBO 360 V2 – RIASEC + P10 + OFERTA ITM
+
+1. Activar el entorno virtual.
+2. Desde la carpeta del proyecto ejecutar:
+   uvicorn app.main:app --reload
+3. Abrir http://127.0.0.1:8000
+
+Cambios de esta versión:
+- P1 abierta y sin puntuación.
+- P2-P9 alimentan RIASEC.
+- P9 ahora mide visualización del futuro y sí puntúa RIASEC.
+- P10 identifica condición de acceso y no puntúa RIASEC.
+- Se corrige la generación del código interno para usar únicamente R, I, A, S, E y C.
+- El resultado principal muestra programas ITM relacionados con el perfil.
+- P10 laboral prioriza virtual/virtual dual.
+- P10 desplazamiento prioriza virtual/virtual dual.
+- P10 económico muestra enlaces oficiales de Matrícula Cero y Presupuesto Participativo.
+- Se conserva un panel técnico RIASEC para calibración, oculto dentro de <details>.
+- Los enlaces de programas apuntan a páginas oficiales del ITM.
+
+Nota: la clasificación RIASEC de programas es una asociación de prototipo para recomendación y debe calibrarse con el equipo del proyecto; no es una clasificación oficial del ITM.

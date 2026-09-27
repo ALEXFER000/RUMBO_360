@@ -1,0 +1,10 @@
+RUMBO 360 – V2.3
+
+ACTUALIZACIÓN: RESULTADO RIASEC VISIBLE
+
+1. El resultado final ahora muestra de forma visible el código RIASEC de tres dimensiones.
+2. Debajo del código se muestran los nombres de las tres dimensiones predominantes.
+3. El resultado se presenta antes de las recomendaciones de programas ITM.
+4. El panel técnico de validación RIASEC se conserva para calibración interna.
+5. No se guardan respuestas de los usuarios en la terminal ni en una base de datos.
+6. Esta modificación facilita la evaluación externa: cada participante puede compartir una captura del resultado RIASEC junto con sus recomendaciones.

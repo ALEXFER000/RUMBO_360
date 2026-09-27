@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RUMBO 360 — orientación educativa para explorar oportunidades de educación superior.">
+    <title>RUMBO 360 · Encuentra tu rumbo</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="nav-shell">
+        <a class="brand" href="#inicio" aria-label="RUMBO 360 inicio">
+            <span class="brand-symbol">360</span>
+            <span>
+                <strong>RUMBO 360</strong>
+                <small>Encuentra tu rumbo, conecta con tu futuro.</small>
+            </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#como-funciona">Cómo funciona</a>
+            <a href="#instituciones">Instituciones</a>
+        </nav>
+
+        <a class="nav-cta" href="#perfil" onclick="iniciarOrientacion(event)">Comenzar orientación</a>
+    </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+    <div class="hero-shell">
+        <div class="hero-copy">
+            <span class="eyebrow">ORIENTACIÓN EDUCATIVA · COMUNA 1</span>
+
+            <h1>
+                Encuentra tu rumbo.<br>
+                <span>Conecta con tu futuro.</span>
+            </h1>
+
+            <p class="hero-lead">
+                RUMBO 360 te ayuda a explorar opciones de educación superior
+                relacionadas con tus intereses y a encontrar información oficial
+                para dar el siguiente paso.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button button-primary" href="#perfil" onclick="iniciarOrientacion(event)">
+                    No sé qué estudiar
+                </a>
+                <a class="button button-secondary" href="#ruta-acceso">
+                    Sé qué estudiar, pero necesito saber cómo financiarlo
+                </a>
+            </div>
+
+            <p class="hero-note">
+                Elige la ruta que corresponde a tu situación y comienza desde allí.
+            </p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+            <div class="orbit-card orbit-main">
+                <span class="orbit-kicker">TU RUTA</span>
+                <strong>Intereses</strong>
+                <span>→ Perfil</span>
+                <span>→ Opciones</span>
+                <span>→ Fuente oficial</span>
+            </div>
+            <div class="orbit-card orbit-small orbit-one">RIASEC</div>
+            <div class="orbit-card orbit-small orbit-two">ITM</div>
+            <div class="orbit-card orbit-small orbit-three">Colegio Mayor</div>
+        </div>
+    </div>
+</section>
+
+<section class="trust-strip">
+    <div><strong>Orientación</strong><span>Explora tus intereses</span></div>
+    <div><strong>Oferta</strong><span>Programas reales</span></div>
+    <div><strong>Acceso</strong><span>Modalidad y apoyos</span></div>
+    <div><strong>Fuente</strong><span>Información oficial</span></div>
+</section>
+
+<!-- El cuestionario no aparece en la pantalla inicial. Se activa desde la ruta "No sé qué estudiar". -->
+<section class="profile-section hidden" id="perfil">
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">RUTA DE ORIENTACIÓN</span>
+            <h2>Conozcamos tu perfil</h2>
+        </div>
+        <p>
+            No necesitas tener una carrera decidida. Responde con sinceridad;
+            no hay respuestas correctas o incorrectas.
+        </p>
+    </div>
+
+    <div class="progress-panel" id="progress">
+        <div class="progress-meta">
+            <span id="progressText">Pregunta 1 de 10</span>
+            <strong id="progressPercent">10%</strong>
+        </div>
+        <div class="progress-track">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+    </div>
+
+    <div id="questionContainer"></div>
+
+    <div class="navigation">
+        <button class="button button-secondary" id="prevButton" type="button">
+            Anterior
+        </button>
+        <button class="button button-primary" id="nextButton" type="button">
+            Siguiente
+        </button>
+    </div>
+
+    <div id="result" class="result-panel hidden"></div>
+</section>
+
+<section class="how-section" id="como-funciona">
+    <div class="section-heading centered">
+        <span class="eyebrow">¿CÓMO FUNCIONA?</span>
+        <h2>Una ruta sencilla para pasar de la duda a la exploración.</h2>
+        <p>
+            RUMBO 360 separa el interés vocacional de las condiciones de acceso
+            para construir una orientación más clara.
+        </p>
+    </div>
+
+    <div class="steps">
+        <article class="step-card">
+            <span>01</span>
+            <h3>Conócete</h3>
+            <p>
+                Responde preguntas sobre tus intereses, fortalezas y la forma
+                en que imaginas tu futuro.
+            </p>
+        </article>
+
+        <article class="step-card">
+            <span>02</span>
+            <h3>Descubre</h3>
+            <p>
+                Obtén un perfil de intereses y explora programas relacionados
+                en instituciones incorporadas.
+            </p>
+        </article>
+
+        <article class="step-card">
+            <span>03</span>
+            <h3>Conecta</h3>
+            <p>
+                Consulta la fuente oficial de cada programa y encuentra una
+                ruta de acceso acorde con tus condiciones.
+            </p>
+        </article>
+    </div>
+</section>
+
+<section class="access-section" id="ruta-acceso">
+    <div class="access-card">
+        <div>
+            <span class="eyebrow">RUTA DE ACCESO</span>
+            <h2>¿Ya tienes una idea de qué estudiar?</h2>
+            <p>
+                Esta ruta está pensada para quienes ya tienen una carrera en mente
+                y necesitan identificar condiciones de acceso, apoyos u opciones
+                de financiación. En el prototipo, estas condiciones también se
+                integran al recorrido de orientación y se conectan con fuentes oficiales.
+            </p>
+        </div>
+
+        <a class="button button-primary" href="#perfil" onclick="iniciarOrientacion(event)">
+            Explorar orientación
+        </a>
+    </div>
+</section>
+
+<section class="institutions-section" id="instituciones">
+    <div class="section-heading centered">
+        <span class="eyebrow">ECOSISTEMA INSTITUCIONAL</span>
+        <h2>Una oferta que puede crecer contigo</h2>
+        <p>
+            La arquitectura del prototipo está preparada para incorporar
+            nuevas instituciones sin cambiar el diagnóstico RIASEC.
+        </p>
+    </div>
+
+    <div class="institution-grid">
+        <article class="institution-card">
+            <span class="institution-tag">ACTIVA</span>
+            <h3>ITM</h3>
+            <p>
+                Oferta de pregrado, modalidades y fuentes oficiales integradas
+                al prototipo.
+            </p>
+        </article>
+
+        <article class="institution-card">
+            <span class="institution-tag">ACTIVA</span>
+            <h3>Colegio Mayor de Antioquia</h3>
+            <p>
+                Programas de pregrado y modalidades incorporados al motor
+                multiinstitucional.
+            </p>
+        </article>
+
+        <article class="institution-card future">
+            <span class="institution-tag">PRÓXIMA AMPLIACIÓN</span>
+            <h3>Pascual Bravo</h3>
+            <p>
+                Institución reservada para una siguiente etapa de expansión.
+            </p>
+        </article>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div>
+        <strong>RUMBO 360</strong>
+        <p>Encuentra tu rumbo, conecta con tu futuro.</p>
+    </div>
+    <p>Prototipo académico · TERRITORIO INN 2026</p>
+</footer>
+
+<script src="/static/selection.js"></script>
+<script>
+function iniciarOrientacion(event) {
+    if (event) event.preventDefault();
+    const perfil = document.getElementById("perfil");
+    perfil.classList.remove("hidden");
+    perfil.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+</script>
+</body>
+</html>

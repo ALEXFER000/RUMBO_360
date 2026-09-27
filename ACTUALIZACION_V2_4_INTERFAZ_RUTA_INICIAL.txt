@@ -1,0 +1,25 @@
+RUMBO 360 — V2.4 FINAL DEMO
+ACTUALIZACIÓN DE INTERFAZ — RUTA INICIAL
+Fecha: 26 de septiembre de 2026
+
+OBJETIVO
+Se ajustó exclusivamente la capa de interfaz para que el cuestionario no aparezca en la pantalla inicial.
+
+FLUJO INICIAL
+1. Pantalla de bienvenida de RUMBO 360.
+2. El usuario elige "No sé qué estudiar" para abrir el cuestionario.
+3. El cuestionario se despliega y comienza la ruta de orientación.
+4. La opción "Sé qué estudiar, pero necesito saber cómo financiarlo" dirige a la sección de ruta de acceso.
+
+ALCANCE
+- Solo se modificó app/templates/index.html.
+- No se modificó selection.js.
+- No se modificó main.py.
+- No se modificó el cálculo RIASEC.
+- No se modificaron las preguntas P1-P10.
+- No se modificó P10 ni su lógica de acceso.
+- No se modificó el catálogo ni las matrices de programas.
+- El motor multiinstitucional permanece intacto.
+
+PROPÓSITO
+Mejorar la experiencia de demostración y hacer explícitos los dos caminos de entrada del prototipo, manteniendo intacto el motor funcional validado.

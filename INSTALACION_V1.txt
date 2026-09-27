@@ -1,0 +1,25 @@
+RUMBO 360 - PROTOTIPO V1 RIASEC
+
+1. Haz una copia de seguridad de la carpeta app actual.
+2. Descomprime el contenido de este ZIP en:
+   C:\Users\ALEXFER000\RUMBO_360
+   aceptando reemplazar los archivos de app.
+3. Abre la terminal en RUMBO_360.
+4. Activa el entorno:
+   .\.venv\Scripts\Activate.ps1
+5. Ejecuta:
+   uvicorn app.main:app --reload
+6. Abre:
+   http://127.0.0.1:8000
+
+La V1 incorpora:
+- P1 abierta y sin puntuación RIASEC.
+- P2-P8 con matriz RIASEC V1.
+- P7 máximo 4 selecciones.
+- P8 máximo 3 selecciones.
+- P9 independiente del RIASEC.
+- Cálculo de perfil y código de 3 letras.
+- Orientación según P9.
+- Resultado visual para pruebas.
+
+Esta es una V1 de prototipo: la matriz debe validarse con pruebas de perfiles ficticios y luego calibrarse.

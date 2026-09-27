@@ -1,0 +1,17 @@
+RUMBO 360 — PREPARACIÓN PARA DESPLIEGUE EN RENDER
+
+Este paquete conserva la aplicación V2.4 FINAL con la interfaz RUTA INICIAL.
+No modifica la lógica RIASEC, P10, recomendaciones ni el catálogo.
+
+Archivos agregados para despliegue:
+- requirements.txt: dependencias de Python.
+- render.yaml: configuración de Render para iniciar FastAPI con el puerto asignado por la plataforma.
+
+Siguiente paso:
+1. Crear un repositorio nuevo en GitHub para RUMBO 360.
+2. Subir el contenido de esta carpeta al repositorio.
+3. En Render, crear un Web Service conectado al repositorio.
+4. Render podrá usar la configuración de render.yaml.
+
+Nota:
+El plan Free de Render permite publicar el servicio, pero puede suspenderlo después de 15 minutos sin tráfico y despertarlo cuando llegue una nueva solicitud. Para una disponibilidad continua sin suspensión se requeriría un plan de pago.
